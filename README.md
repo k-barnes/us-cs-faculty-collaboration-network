@@ -1,2 +1,2 @@
 # us-cs-faculty-collaboration-network
-Information about computer science faculty at US institutions that grant PhD degrees in computer science, hand-collected in 2024.
+2024 hand-collected data set on computer science faculty at US PhD-granting institutions.
