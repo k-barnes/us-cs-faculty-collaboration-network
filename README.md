@@ -1,9 +1,8 @@
 # us-cs-faculty-collaboration-network
-2024 hand-collected data set on computer science faculty at US PhD-granting institutions.
 
-Supplementary data for the paper "Edge interventions can mitigate demographic and prestige disparities in the Computer Science coauthorship network" (2025).
+Supplementary data for the paper "Edge interventions can mitigate demographic and prestige disparities in the Computer Science coauthorship network" (2025). The data was hand-collected in 2024-25 according to the procedure described in our paper.
 
-The data consist of a census of 5,670 computer science faculty at Ph.D. granting institutions in the US, including the following features.
+The data consist of a census of 5,670 computer science faculty at Ph.D. granting institutions in the US, including the following features:
 
 |    feature     | type  | values taken | description |
 | -------------- | ----- | -------- | ----- |
@@ -33,7 +32,7 @@ The data consist of a census of 5,670 computer science faculty at Ph.D. granting
 | combined_gender_estimate  | categorical | Man, Woman, Non-binary or unsure, No photo found  | gender meta-label algirithmically estimated to maximize alignment with survey self-identification |
 | combined_race_estimate  | categorical | White, East Asian, Southeast Asian, Indian / Indian subcontinent, Middle Eastern / North African, Black, Latinx, Multiracial or Unsure, No photo found, Native Hawaiian or Pacific Islander  | race meta-label algirithmically estimated to maximize alignment with survey self-identification |
 
-The node metadata given above is linked to an edge list for a coauthorship network using the node ID feature. Nodes are faculty in our census. Two nodes are connected by an edge if they are listed as coauthors on a paper indexed by the DBLP Computer Science Bibliography, an online repository of publication data from major computer science venues. The edgelist is built from 3,652,370 journal articles and 3,563,465 publications in conference proceedings.
+The node metadata given above is linked to an edge list for a coauthorship network built from 3,652,370 journal articles and 3,563,465 conference proceedings indexed by the DBLP Computer Science Bibliography:
 
 |      feature       |  type | description |
 | -------------- | ----- | -------- | 
@@ -41,5 +40,5 @@ The node metadata given above is linked to an edge list for a coauthorship netwo
 | trg | string   | faculty names     | 
 | years      | dictionary   | faculty number of coauthored publications per year   | 
 | weight     | integer | total number of coauthored publications  | 
-| src_id    | integer | links to node_id in faculty meta data file  | 
-| trg_id    | integer | links to node_id in faculty meta data file   | 
+| src_id    | integer | links to node_id in faculty metadata file  | 
+| trg_id    | integer | links to node_id in faculty metadata file   | 
